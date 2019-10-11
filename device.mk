@@ -17,14 +17,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/h815/h815-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/f500/f500-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Init configuration
 PRODUCT_PACKAGES += \
-    fstab.h815 \
+    fstab.f500 \
     init.device.rc 
 
 # Gps
